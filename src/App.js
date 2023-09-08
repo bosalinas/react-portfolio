@@ -1,4 +1,3 @@
-import './App.css';
 import Project from "./components/Project";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
