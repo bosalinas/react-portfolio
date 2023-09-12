@@ -1,20 +1,33 @@
 import React from 'react';
+import { Card, CardBody, CardTitle, CardText, Button, CardSubtitle } from 'reactstrap';
+import Portfolio from "./Portfolio"
 
-export default function Project() {
+
+export default function Project(props) {
+    let project = props.projectName;
+    let link = props.link;
+    // let img = props.img;
     return (
-        <div>
-            <div className="aboutMe">
-                <h2>About Me</h2>
-                <img className="selfie" src="" alt="Picture of Bo Salinas"/>
-            </div>
-            <div className="about-text">
-                <p>Hi, my name is Bo Salinas. I use they/them pronouns. I was born in California and raised in Texas. I worked in Special
-                    Education for a few years before starting this new challenge of becoming a web developer. I'm in the beginning of
-                    my journey to become an excellent web developer.
-                    In a nutshell, I want to create websites that help organizations address business challenges and meet
-                    their needs.
-                </p>
-            </div>
-        </div>
+        <Portfolio>
+            <Card style={{ width: '18rem' }}>
+                <img/>
+                <CardBody>
+                    <CardTitle tag="h5">
+                        {project}
+                    </CardTitle>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6">
+                        {link}
+                    </CardSubtitle>
+                    <CardText>
+                        Some quick example text to build on the card title and make up the bulk of the card‘s content.
+                    </CardText>
+                    <Button>
+                        Button
+                    </Button>
+                </CardBody>
+            </Card>
+        </Portfolio>
     )
 }
