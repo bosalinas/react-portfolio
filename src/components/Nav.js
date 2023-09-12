@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Nav.css";
+import { Nav } from 'reactstrap';
 
-export default function Nav(props) {
+export default function Navi(props) {
     const setSection = props.setSection;
     return (
-        <nav className="navComp">
+        <Nav className="navComp">
          <ul>
             <li>
                 <a onClick={()=>{setSection("About Me")}} className={props.section==="About Me"?"nav-link active":"nav-link"} href="#">About Me</a>
@@ -19,6 +20,6 @@ export default function Nav(props) {
                 <a onClick={()=>{setSection("Resume")}} className={props.section==="Resume"?"nav-link active":"nav-link"} href="#">Resume</a>
             </li>
          </ul>
-        </nav>
+        </Nav>
     )
 }

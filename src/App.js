@@ -1,7 +1,8 @@
 import Project from "./components/Project";
-import Nav from "./components/Nav";
+import Navi from "./components/Nav";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import "./App.css";
 import React, { useState } from 'react';
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
 
     return (
         <div className='portfolio-app'>
-            <Nav section={section} setSection={setSection}/>
+            <Navi section={section} setSection={setSection}/>
             {section==="Portfolio"?<Project />:""}
             {section==="Contact"?<Contact />:""}
             <Footer />
