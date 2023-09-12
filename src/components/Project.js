@@ -3,7 +3,7 @@ import { Card, CardBody, CardTitle, CardText, Button, CardSubtitle } from 'react
 import Portfolio from "./Portfolio"
 
 
-export default function Project(props) {
+export default function Project() {
     let project = props.projectName;
     let link = props.link;
     // let img = props.img;

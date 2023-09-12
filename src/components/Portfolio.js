@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Portfolio() {
+export default function Portfolio(props) {
     return (
         <div
             projectName="Yass Flix"
@@ -9,4 +9,5 @@ export default function Portfolio() {
         >
         </div>
     )
+    console.log(props.projectName)
 }

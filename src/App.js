@@ -3,7 +3,7 @@ import Navi from "./components/Nav";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume"
-import Portfolio from "./components/Portfolio"
+import Project from "./components/Project";
 import "./App.css";
 import React, { useState } from 'react';
 
@@ -14,7 +14,7 @@ export default function App() {
         <div className='portfolio-app'>
             <Navi section={section} setSection={setSection}/>
             {section==="About Me"?<AboutMe />:""}
-            {section==="Project"?<Portfolio />:""}
+            {section==="Project"?<Project />:""}
             {section==="Resume"?<Resume />:""}
             {section==="Contact"?<Contact />:""}
             <Footer />
