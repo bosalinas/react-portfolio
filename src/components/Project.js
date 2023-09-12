@@ -1,33 +1,21 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardText, Button, CardSubtitle } from 'reactstrap';
-import Portfolio from "./Portfolio"
+import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 
-
-export default function Project() {
-    let project = props.projectName;
-    let link = props.link;
+export default function Project(project) {
+    let { projectName, link } = project;
     // let img = props.img;
     return (
-        <Portfolio>
             <Card style={{ width: '18rem' }}>
                 <img/>
                 <CardBody>
                     <CardTitle tag="h5">
-                        {project}
+                        {projectName}
                     </CardTitle>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6">
-                        {link}
-                    </CardSubtitle>
                     <CardText>
                         Some quick example text to build on the card title and make up the bulk of the card‘s content.
                     </CardText>
-                    <Button>
-                        Button
-                    </Button>
+                    <Button>{link}</Button>
                 </CardBody>
             </Card>
-        </Portfolio>
     )
 }
