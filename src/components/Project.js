@@ -2,19 +2,17 @@ import React from 'react';
 import "./Project.css"
 import { Button } from 'reactstrap';
 
-export default function Project(project) {
-    let { projectName, link } = project;
-
+export default function Project(props) {
     return (
             <div className='project-card'>
-                <img src='' />
+                <img src={props.img} />
                 <h3>
-                    {projectName}
+                    {props.projectName}
                 </h3>
                 <div className='info-group'>
                     <p>Text for the project</p>
                 </div>
-                <a href={link}><Button className='btn'>View</Button></a>
+                <a href={props.link}><Button className='btn'>View</Button></a>
             </div>
     )
 }

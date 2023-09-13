@@ -16,13 +16,13 @@
     background-color: white;
 }
 
-.project-card > img {
+/* .project-card > img {
     width: 100%;
     height: auto;
     align-self: center;
     border-radius: 5px;
     object-fit: cover;
-}
+} */
 
 .project-card > h3 {
     font-weight: 700;
