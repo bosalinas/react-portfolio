@@ -1,3 +1,44 @@
 * {
-    font-family: Arial, Helvetica, sans-serif
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+    background-color: black;
+}
+
+.name {
+    margin-right: auto;
+    font-size: 1.5em;
+    color: white;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 21px #fff,
+      0 0 42px #0274AF,
+      0 0 82px #0274AF,
+      0 0 92px #0274AF,
+      0 0 102px #0274AF,
+      0 0 151px #0274AF;
 }
