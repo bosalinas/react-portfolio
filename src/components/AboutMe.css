@@ -1,0 +1,38 @@
+.aboutMe-card {
+    display: grid;
+    place-items: center;
+    min-height: 50vh;
+  }
+
+.about-box {
+    width: 800px;
+    height: auto;
+    display: flex;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 25px;
+    padding: 1.8em;
+    align-items: center;
+}
+
+.about-name {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    color: white;
+    width: 580px;
+    padding-right: 20px;
+}
+
+.about-name img {
+    width: 120px;
+    height: 140px;
+    padding-top: 2px;
+    border-radius: 25px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    color: rgb(222, 220, 220);
+}

@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* body {
+    background-image: url(file:///C:/Users/pwy958/OneDrive%20-%20University%20of%20Texas%20at%20San%20Antonio/Desktop/BootCamp%20Folders/bg.jpg);
+} */
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -41,4 +45,71 @@ header a {
       0 0 92px #0274AF,
       0 0 102px #0274AF,
       0 0 151px #0274AF;
+}
+
+.contact-card {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.form-area {
+    width: 800px;
+    height: auto;
+    display: flex;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 25px;
+    padding: 1.8em;
+}
+
+.msg-box {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.msg-box > textarea {
+    flex: 1;
+    min-width: 18em;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.msg-box > label {
+  justify-content:  center;
+}
+
+.details-box {
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.details-box input {
+    width: 450px;
+    color: #fff;
+    border-radius: 25px;
+    height: 50px;
+    background: rgba(255, 255, 255, .2);
+    border: 0;
+}
+
+.details-box input,
+.details-box button {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+button {
+    border-radius: 25px;
+    background-color: deepskyblue;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 30px;
 }

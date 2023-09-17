@@ -1,23 +1,29 @@
 import React from 'react';
-import { Button, Form, Card } from 'reactstrap';
 
 export default function Contact() {
     return (
-<Card>
-  <Form id="contactForm">
-
-    
-    <div className="mb-3">
-      <label className="form-label" for="name">Name</label>
-      <input className="form-control" id="name" type="text" placeholder="Name" />
+<div className='contact-card'>
+  <form className='form-area'>
+    <div className='msg-box'>
+      <label for="msg">Message: </label>
+      <textarea type="text" placeholder="Write message here" />
     </div>
     
-    <div className="d-grid">
-      <Button className="btn btn-primary btn-lg" type="submit">Submit</Button>
+    <div className='details-box'>
+      <label for="name">Name: </label>
+      <input type="text"/>
+      
+      <label for="email">Email: </label>
+      <input type="email"  />
+    
+      <label for="subject">Subject: </label>
+      <input type="text" />
+    
+      <button type="submit">Submit</button>
     </div>
 
-  </Form>
+  </form>
 
-</Card>
+</div>
     )
 }
