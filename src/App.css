@@ -1,3 +1,146 @@
 * {
-    font-family: Arial, Helvetica, sans-serif
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+    background-color: black;
+}
+
+.name {
+    margin-right: auto;
+    font-size: 1.5em;
+    color: white;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: #fff;
+}
+
+.contact-card {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.form-area {
+    width: 830px;
+    height: auto;
+    display: flex;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 25px;
+    padding: 1.8em;
+}
+
+.form-area label {
+    color: rgb(190, 189, 189);
+    text-transform: uppercase;
+}
+
+.msg-box {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.msg-box > textarea {
+    flex: 1;
+    min-width: 18em;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.details-box {
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.details-box input {
+    width: 450px;
+    color: #fff;
+    border-radius: 25px;
+    height: 50px;
+    background: rgba(255, 255, 255, .2);
+    border: 0;
+}
+
+.details-box input,
+.details-box button {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+button {
+    border-radius: 25px;
+    background-color: deepskyblue;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.footer-box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+.fa {
+    padding: 20px 60px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #0274AF;
+}
+
+.alert-email,
+.alert-empty {
+    color: rgb(245, 96, 96);
+}
+
+.pdf-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.pdf a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.pdf a :hover {
+    color: rgb(7, 99, 142);
 }
