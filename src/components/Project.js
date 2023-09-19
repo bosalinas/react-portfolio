@@ -11,6 +11,7 @@ export default function Project(props) {
                 </h3>
                 <div className='info-group'>
                     <p>{props.text}</p>
+                    <a href={props.git}><button>Repo</button></a>
                 </div>
             </div>
     )

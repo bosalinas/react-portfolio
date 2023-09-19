@@ -1,7 +1,7 @@
 .aboutMe-card {
     display: grid;
     place-items: center;
-    min-height: 50vh;
+    min-height: 100vh;
   }
 
 .about-box {

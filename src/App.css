@@ -5,10 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* body {
-    background-image: url(file:///C:/Users/pwy958/OneDrive%20-%20University%20of%20Texas%20at%20San%20Antonio/Desktop/BootCamp%20Folders/bg.jpg);
-} */
-
 header {
     display: flex;
     justify-content: flex-end;
@@ -54,12 +50,17 @@ header a {
 }
 
 .form-area {
-    width: 800px;
+    width: 830px;
     height: auto;
     display: flex;
     background-color: rgba(0, 0, 0, .8);
     border-radius: 25px;
     padding: 1.8em;
+}
+
+.form-area label {
+    color: rgb(190, 189, 189);
+    text-transform: uppercase;
 }
 
 .msg-box {
@@ -76,10 +77,6 @@ header a {
     padding: 15px;
     border: 0;
     border-radius: 10px;
-}
-
-.msg-box > label {
-  justify-content:  center;
 }
 
 .details-box {
@@ -112,4 +109,26 @@ button {
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 30px;
+}
+
+.footer-box {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    padding: 20px 60px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #0274AF;
+  }
+
+.alert-email,
+.alert-empty {
+    color: rgb(245, 96, 96);
 }
