@@ -33,14 +33,6 @@ header a {
 
 .active {
     color: #fff;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 21px #fff,
-      0 0 42px #0274AF,
-      0 0 82px #0274AF,
-      0 0 92px #0274AF,
-      0 0 102px #0274AF,
-      0 0 151px #0274AF;
 }
 
 .contact-card {
@@ -112,12 +104,14 @@ button {
 }
 
 .footer-box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -50px;
-}
+    color: white;
+    text-align: center;
+  }
 
 .fa {
     padding: 20px 60px;
@@ -132,4 +126,21 @@ button {
 .alert-email,
 .alert-empty {
     color: rgb(245, 96, 96);
+}
+
+.pdf-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.pdf a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.pdf a :hover {
+    color: rgb(7, 99, 142);
 }

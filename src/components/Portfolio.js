@@ -2,6 +2,11 @@ import React from 'react';
 import Project from "./Project";
 import gsd from "../assets/images/GSD.png";
 import flix from "../assets/images/yasflix.png";
+import quiz from "../assets/images/quiz.png";
+import pg from "../assets/images/pg.png";
+import horiseon from "../assets/images/horiseon.png";
+import workday from "../assets/images/workday.png";
+
 
 export default function Portfolio() {
     return (
@@ -10,43 +15,43 @@ export default function Portfolio() {
                 img={flix}
                 projectName="Yass Flix" 
                 link="https://bosalinas.github.io/ShowBox/"
-                text="Text for project 1"
+                text="This was the first team project I worked on. We decided to build a movie database."
                 git="https://github.com/bosalinas/ShowBox"
             />
             <Project 
                 img={gsd}
                 projectName="Get Sh*t Done" 
                 link="https://gsdone-2f10065746b9.herokuapp.com/"
-                text="Text for project 2"
+                text="The beginnings on a to-do list app."
                 git="https://github.com/bosalinas/GSDone"
             />
             <Project 
-                img={gsd}
-                projectName="Project 3" 
-                link="https://github.com/bosalinas?tab=repositories"
-                text="Text for project 3"
-                git=""
+                img={quiz}
+                projectName="Quiz" 
+                link="https://bosalinas.github.io/MC-Quiz/"
+                text="Building a multiple choice quiz in Javascript."
+                git="https://github.com/bosalinas/MC-Quiz"
             />
             <Project 
-                img={gsd}
-                projectName="Project 4" 
-                link="https://github.com/bosalinas?tab=repositories"
-                text="Text for project 4"
-                git=""
+                img={pg}
+                projectName="Password Generator" 
+                link="https://bosalinas.github.io/random-password-generator/"
+                text="A project to build a simple password generator using JS."
+                git="https://github.com/bosalinas/random-password-generator"
             />
             <Project 
-                img={gsd}
-                projectName="Project 5" 
-                link="https://github.com/bosalinas?tab=repositories"
-                text="Text for project 5"
-                git=""
+                img={workday}
+                projectName="Workday Scheduler" 
+                link="https://bosalinas.github.io/workday-scheduler/"
+                text="A simple schedule feature."
+                git="https://github.com/bosalinas/workday-scheduler"
             />
             <Project 
-                img={gsd}
-                projectName="Project 6" 
-                link="https://github.com/bosalinas?tab=repositories"
-                text="Text for project 6"
-                git=""
+                img={horiseon}
+                projectName="Company Website" 
+                link="https://bosalinas.github.io/Horiseon-website/"
+                text="Project for one-page scroll website."
+                git="https://github.com/bosalinas/Horiseon-website"
             />
         </div>
     )

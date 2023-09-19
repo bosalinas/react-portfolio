@@ -32,7 +32,7 @@
 
 .info-group {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .info-group > p {
@@ -40,6 +40,8 @@
     font-size: 12px;
     color: #2B283A;
 }
-.info-group > a {
-    
+
+.info-group button {
+    background-color: black;
+    border-radius: 5px;
 }

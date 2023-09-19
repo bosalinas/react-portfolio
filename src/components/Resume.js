@@ -1,12 +1,12 @@
 import React from 'react';
-import pdf from '../assets/files/'
+import pdf from '../assets/files/resume.pdf'
 
 export default function Resume() {
     return (
         
-        <div className=''>
-            <div className=''>
-            <a href={pdf}>Click here for my pdf</a>
+        <div className='pdf-cont'>
+            <div className='pdf'>
+            <a href={pdf}>Click here to download my resume!</a>
             </div>
         </div>
 
