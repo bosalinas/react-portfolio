@@ -1,8 +1,14 @@
 import React from 'react';
-
+import pdf from '../assets/files/'
 
 export default function Resume() {
     return (
-        <h3>Resume here</h3>
+        
+        <div className=''>
+            <div className=''>
+            <a href={pdf}>Click here for my pdf</a>
+            </div>
+        </div>
+
     )
 }
